@@ -6,7 +6,7 @@ COPY . /app
 
 WORKDIR /app
 
-RUN CGO_ENABLED=0 go build -o broker-service ./cmd/alpine
+RUN CGO_ENABLED=0 go build -o broker-service ./cmd/api
 
 RUN chmod +x /app/broker-service
 
